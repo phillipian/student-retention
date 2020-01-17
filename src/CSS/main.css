@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+footer{
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  background-color: #fff;
+}
+
+footer .left p {
+  text-align: left;
+  font-family: georgia;
+  font-size: 15px;
+  margin-bottom: 0;
+  max-width: 100%;
+  columns: 1;
+}
+
+.graph{
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+hr {
+  width: 75s%;
+}
+
+.dotted {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px dotted;
+  border-bottom: 0px;
+}
