@@ -118,7 +118,7 @@ var chart = Highcharts.chart('senior-class', {
         text: "Smallest class since merger: 2010 - 296 students",
         align: 'left',
         verticalAlign: 'bottom',
-        x: 70,
+        x: 80,
         y: 15,
         style: {
           color: "#d64541"
@@ -134,7 +134,7 @@ var chart = Highcharts.chart('senior-class', {
         text: "Class of 2020: 2020 - 305 students",
         align: 'left',
         verticalAlign: 'bottom',
-        x: 70,
+        x: 80,
         style: {
           color: "#4b77be"
         }
