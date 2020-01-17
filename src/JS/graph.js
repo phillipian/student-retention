@@ -36,6 +36,7 @@ var chart = Highcharts.chart('senior-class', {
           fontWeight: 'bold'
         }
     },
+    tickInterval: 5,
     categories: [1972,
       1973,
       1974,
