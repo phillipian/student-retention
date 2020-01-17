@@ -5,16 +5,16 @@ var chart = Highcharts.chart('senior-class', {
       fontFamily: "sans-serif",
       fontSize: '15px'
     },
-    backgroundColor: "#ECF0F1"
+    backgroundColor: "white"
   },
   title: {
-    text: 'Senior Class Sizes Including PGs through the Years',
+    text: 'Senior Class Sizes through the Years <br/>Including PGs',
     style: {
       fontWeight: 'bold'
     }
   },
   subtitle: {
-    text: '<i>Note: merged with Abbot Academy in 1973-1974; the data is based on the directory (two members of the Class of 2020 have left since)</i>'
+    text: '<i>Note: Data taken from directories at release (since then, two students in Class of 2020 have left),<br/>Abbot merger in 1973-1974</i>'
   },
   legend: {
     enabled: false
@@ -30,7 +30,7 @@ var chart = Highcharts.chart('senior-class', {
   },
   xAxis: {
     title: {
-        text: 'Graduating Years',
+        text: 'Class Years',
         style: {
           color: 'black',
           fontWeight: 'bold'
@@ -88,17 +88,62 @@ var chart = Highcharts.chart('senior-class', {
   },
   yAxis: {
     title: {
-      text: 'Size of the Senior and PG Class',
+      text: 'Graduating Class Size',
       style: {
         color: 'black',
         fontWeight: 'bold'
       }
-    }
+    },
+    plotLines: [{
+      color: '#6abf8f',
+      width: 2,
+      value: 419,
+      zIndex: 0,
+      label: {
+        text: "Largest class since merger: 1981 - 419 students",
+        align: 'right',
+        x: -10,
+        style: {
+          color: "#6abf8f"
+        }
+      }
+    },
+    {
+      color: '#d64541',
+      width: 2,
+      value: 296,
+      zIndex: 100,
+      label: {
+        text: "Smallest class since merger: 2010 - 296 students",
+        align: 'left',
+        verticalAlign: 'bottom',
+        x: 150,
+        y: 15,
+        style: {
+          color: "#d64541"
+        }
+      }
+    },
+    {
+      color: '#4b77be',
+      width: 2,
+      value: 305,
+      zIndex: 100,
+      label: {
+        text: "Class of 2020: 2020 - 305 students",
+        align: 'left',
+        verticalAlign: 'bottom',
+        x: 150,
+        style: {
+          color: "#4b77be"
+        }
+      }
+    }]
   },
   plotOptions: {
     area: {
       fillOpacity: 0.5,
-      color: "#393e85"
+      color: "#947cb0"
     },
     dataLabels: {
       enabled: false,
@@ -109,7 +154,7 @@ var chart = Highcharts.chart('senior-class', {
     }
   },
   series: [{
-    name: 'Size of the Senior Class',
+    name: 'Graduating Class Size',
     data: [260,
 282,
 381,
@@ -148,7 +193,7 @@ var chart = Highcharts.chart('senior-class', {
 328,
 307,
 332,
-270,
+296,
 338,
 315,
 327,

@@ -26,14 +26,3 @@ footer .left p {
   max-width: 70%;
   margin: 0 auto;
 }
-
-hr {
-  width: 75s%;
-}
-
-.dotted {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-top: 1px dotted;
-  border-bottom: 0px;
-}
