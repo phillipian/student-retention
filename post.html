@@ -11,47 +11,14 @@
 </head>
 
 <body>
-  <div id="senior-class" class="graph"></div>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-    }
-
-    footer {
-      padding: 0 20px;
-      width: 100%;
-      box-sizing: border-box;
-      display: flex;
-      align-items: center;
-      height: 64px;
-      background-color: #fff;
-    }
-
-    footer .left p {
-      text-align: left;
-      font-family: georgia;
-      font-size: 15px;
-      margin-bottom: 0;
-      max-width: 100%;
-      columns: 1;
-    }
-
-    .graph {
-      max-width: 70%;
-      margin: 0 auto;
-      font-family: "Avenir 85 Black";
-    }
-  </style>
-
-  <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script>
+  <div id="senior-class" style="max-width: 60%; margin: 0 auto;"></div>
+  <script type="javascript" src="https://code.highcharts.com/highcharts.js"></script>
+  <script type="javascript">
     var chart = Highcharts.chart('senior-class', {
       chart: {
         type: 'area',
         style: {
-          fontFamily: "sans-serif",
+          fontFamily: "Avenir 85 Black",
           fontSize: '15px'
         },
         backgroundColor: "white"
